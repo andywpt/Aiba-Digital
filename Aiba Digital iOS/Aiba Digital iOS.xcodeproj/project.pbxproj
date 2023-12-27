@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE58D6948117B85A0B03C482 /* Pods_Aiba_Digital_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5002755CB8E7FA27A6B08FA /* Pods_Aiba_Digital_iOS.framework */; };
 		E85591372B3BF6BF0044EE1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85591362B3BF6BF0044EE1F /* AppDelegate.swift */; };
 		E85591392B3BF6BF0044EE1F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85591382B3BF6BF0044EE1F /* SceneDelegate.swift */; };
 		E855913B2B3BF6BF0044EE1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E855913A2B3BF6BF0044EE1F /* ViewController.swift */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E27352120F296BF8EF40472 /* Pods-Aiba Digital iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aiba Digital iOS.debug.xcconfig"; path = "Target Support Files/Pods-Aiba Digital iOS/Pods-Aiba Digital iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		97E2476C33CBB6BB17190B1C /* Pods-Aiba Digital iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aiba Digital iOS.release.xcconfig"; path = "Target Support Files/Pods-Aiba Digital iOS/Pods-Aiba Digital iOS.release.xcconfig"; sourceTree = "<group>"; };
+		A5002755CB8E7FA27A6B08FA /* Pods_Aiba_Digital_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aiba_Digital_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E85591332B3BF6BF0044EE1F /* Aiba Digital iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aiba Digital iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E85591362B3BF6BF0044EE1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E85591382B3BF6BF0044EE1F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE58D6948117B85A0B03C482 /* Pods_Aiba_Digital_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32F045749E49F85CBE76E484 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5002755CB8E7FA27A6B08FA /* Pods_Aiba_Digital_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E855912A2B3BF6BF0044EE1F = {
 			isa = PBXGroup;
 			children = (
 				E85591352B3BF6BF0044EE1F /* Aiba Digital iOS */,
 				E85591342B3BF6BF0044EE1F /* Products */,
+				FD32BC73F7FBA73EFBD94A61 /* Pods */,
+				32F045749E49F85CBE76E484 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +87,16 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		FD32BC73F7FBA73EFBD94A61 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E27352120F296BF8EF40472 /* Pods-Aiba Digital iOS.debug.xcconfig */,
+				97E2476C33CBB6BB17190B1C /* Pods-Aiba Digital iOS.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E85591472B3BF6BF0044EE1F /* Build configuration list for PBXNativeTarget "Aiba Digital iOS" */;
 			buildPhases = (
+				A40D5527D26DDD2A761D2248 /* [CP] Check Pods Manifest.lock */,
 				E855912F2B3BF6BF0044EE1F /* Sources */,
 				E85591302B3BF6BF0044EE1F /* Frameworks */,
 				E85591312B3BF6BF0044EE1F /* Resources */,
+				E77A5B33F5B1EC931D6B3D58 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,6 +163,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A40D5527D26DDD2A761D2248 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Aiba Digital iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E77A5B33F5B1EC931D6B3D58 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Aiba Digital iOS/Pods-Aiba Digital iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Aiba Digital iOS/Pods-Aiba Digital iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Aiba Digital iOS/Pods-Aiba Digital iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E855912F2B3BF6BF0044EE1F /* Sources */ = {
@@ -278,6 +347,7 @@
 		};
 		E85591482B3BF6BF0044EE1F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E27352120F296BF8EF40472 /* Pods-Aiba Digital iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -305,6 +375,7 @@
 		};
 		E85591492B3BF6BF0044EE1F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97E2476C33CBB6BB17190B1C /* Pods-Aiba Digital iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
