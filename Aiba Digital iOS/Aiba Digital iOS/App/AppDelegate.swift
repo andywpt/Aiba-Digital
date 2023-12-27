@@ -6,12 +6,16 @@
 //
 
 import UIKit
+import TPDirect
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let appId: Int32 = 135812
+        let appKey = "app_bGh3VhCJGIgYFh5NtgLqN6arfiQ93CqRB7y3AtpQGhpcW3tpGM30w7JHgUPb"
+        //TPDSetup.setWithAppId(appId, withAppKey: appKey, with: .sandBox)
         return true
     }
 

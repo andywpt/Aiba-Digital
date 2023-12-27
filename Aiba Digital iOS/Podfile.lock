@@ -871,12 +871,13 @@ PODS:
   - Parchment (3.2.0)
   - PromisesObjC (2.3.1)
   - RecaptchaInterop (100.0.0)
-  - SDWebImage (5.18.7):
-    - SDWebImage/Core (= 5.18.7)
-  - SDWebImage/Core (5.18.7)
+  - SDWebImage (5.18.8):
+    - SDWebImage/Core (= 5.18.8)
+  - SDWebImage/Core (5.18.8)
   - SkeletonView (1.30.4)
   - SnapKit (5.6.0)
   - SwipeCellKit (2.7.1)
+  - tappay-ios-sdk (2.17.0)
 
 DEPENDENCIES:
   - Firebase/RemoteConfig
@@ -896,6 +897,7 @@ DEPENDENCIES:
   - SkeletonView
   - SnapKit
   - SwipeCellKit
+  - tappay-ios-sdk (from `https://github.com/TapPay/tappay-ios-sdk.git`)
 
 SPEC REPOS:
   trunk:
@@ -948,6 +950,15 @@ SPEC REPOS:
     - SnapKit
     - SwipeCellKit
 
+EXTERNAL SOURCES:
+  tappay-ios-sdk:
+    :git: https://github.com/TapPay/tappay-ios-sdk.git
+
+CHECKOUT OPTIONS:
+  tappay-ios-sdk:
+    :commit: a60ded9b93579d6a590b259bbe3c339c91b1dd0f
+    :git: https://github.com/TapPay/tappay-ios-sdk.git
+
 SPEC CHECKSUMS:
   abseil: 926fb7a82dc6d2b8e1f2ed7f3a718bce691d1e46
   AppAuth: 3bb1d1cd9340bd09f5ed189fb00b1cc28e1e8570
@@ -993,11 +1004,12 @@ SPEC CHECKSUMS:
   Parchment: a43c440b22c8a60f7e0196b74339446d4d1d18ea
   PromisesObjC: c50d2056b5253dadbd6c2bea79b0674bd5a52fa4
   RecaptchaInterop: 7d1a4a01a6b2cb1610a47ef3f85f0c411434cb21
-  SDWebImage: f9258c58221ed854cfa0e2b80ee4033710b1c6d3
+  SDWebImage: a81bbb3ba4ea5f810f4069c68727cb118467a04a
   SkeletonView: 5a050f6411e697abd4cda0a8d767013399dccd69
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   SwipeCellKit: 3972254a826da74609926daf59b08d6c72e619ea
+  tappay-ios-sdk: f2f381f79775a0a54be3300abb7dab38a062596e
 
-PODFILE CHECKSUM: 05c54bb7b6e7bdc53ea935517560efafe9421561
+PODFILE CHECKSUM: 1e858635b85154ccfdef62e78faece3686b82c42
 
-COCOAPODS: 1.12.1
+COCOAPODS: 1.14.3
