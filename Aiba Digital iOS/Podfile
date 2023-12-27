@@ -22,6 +22,7 @@ target 'Aiba Digital iOS' do
   pod 'SDWebImage'
   pod 'SkeletonView'
   pod 'SnapKit'
+  pod 'Sourcery'
   pod 'SwipeCellKit'
   pod 'tappay-ios-sdk',:git => 'https://github.com/TapPay/tappay-ios-sdk.git'
   pod 'Parchment'
