@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1EC8613BFA3EF306B5017C0F /* Pods_Aiba_Digital.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF6C215A792AA450DEB57C02 /* Pods_Aiba_Digital.framework */; };
+		C2FD098D08EE8C9F3E87F4F3 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18B31B63E48B36E5163B561 /* Config.swift */; };
 		E80A101B2B3D0B3B00C86585 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80A101A2B3D0B3B00C86585 /* AppDelegate.swift */; };
 		E80A101D2B3D0B3B00C86585 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80A101C2B3D0B3B00C86585 /* SceneDelegate.swift */; };
 		E80A101F2B3D0B3B00C86585 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80A101E2B3D0B3B00C86585 /* ViewController.swift */; };
@@ -33,6 +34,9 @@
 		E88E1FBC2B3D1AE70051AC6B /* GoogleService-Info-Prod.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Prod.plist"; sourceTree = "<group>"; };
 		E88E1FBE2B3D1B950051AC6B /* GoogleService-Info-Dev.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Dev.plist"; sourceTree = "<group>"; };
 		E88E1FC12B3D1C710051AC6B /* firebase_config.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = firebase_config.sh; sourceTree = "<group>"; };
+		E88E1FC62B3D37140051AC6B /* env_config.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = env_config.sh; sourceTree = "<group>"; };
+		E88E1FC82B3D38940051AC6B /* Config.stencil */ = {isa = PBXFileReference; lastKnownFileType = text; path = Config.stencil; sourceTree = "<group>"; };
+		F18B31B63E48B36E5163B561 /* Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		FF6C215A792AA450DEB57C02 /* Pods_Aiba_Digital.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aiba_Digital.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -59,7 +63,7 @@
 		E80A100E2B3D0B3B00C86585 = {
 			isa = PBXGroup;
 			children = (
-				E80A10192B3D0B3B00C86585 /* Aiba Digital */,
+				E80A10192B3D0B3B00C86585 /* AibaDigital */,
 				E8EFF45E2B3D18C500063180 /* Scripts */,
 				E88E1FC32B3D1F130051AC6B /* Firebase */,
 				E80A10182B3D0B3B00C86585 /* Products */,
@@ -76,23 +80,25 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E80A10192B3D0B3B00C86585 /* Aiba Digital */ = {
+		E80A10192B3D0B3B00C86585 /* AibaDigital */ = {
 			isa = PBXGroup;
 			children = (
 				E80A102E2B3D0B8200C86585 /* App */,
 			);
-			path = "Aiba Digital";
+			path = AibaDigital;
 			sourceTree = "<group>";
 		};
 		E80A102E2B3D0B8200C86585 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				E88E1FC82B3D38940051AC6B /* Config.stencil */,
 				E80A101A2B3D0B3B00C86585 /* AppDelegate.swift */,
 				E80A101C2B3D0B3B00C86585 /* SceneDelegate.swift */,
 				E80A101E2B3D0B3B00C86585 /* ViewController.swift */,
 				E80A10232B3D0B3C00C86585 /* Assets.xcassets */,
 				E80A10252B3D0B3C00C86585 /* LaunchScreen.storyboard */,
 				E80A10282B3D0B3C00C86585 /* Info.plist */,
+				F18B31B63E48B36E5163B561 /* Config.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -101,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				E88E1FC12B3D1C710051AC6B /* firebase_config.sh */,
+				E88E1FC62B3D37140051AC6B /* env_config.sh */,
 			);
 			path = BuildPhase;
 			sourceTree = "<group>";
@@ -139,11 +146,12 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E80A10162B3D0B3B00C86585 /* Aiba Digital */ = {
+		E80A10162B3D0B3B00C86585 /* AibaDigital */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E80A102B2B3D0B3C00C86585 /* Build configuration list for PBXNativeTarget "Aiba Digital" */;
+			buildConfigurationList = E80A102B2B3D0B3C00C86585 /* Build configuration list for PBXNativeTarget "AibaDigital" */;
 			buildPhases = (
 				5D9A76F6E3FA7F65BAE9CDF1 /* [CP] Check Pods Manifest.lock */,
+				E88E1FC72B3D371D0051AC6B /* Env Configuration */,
 				E88E1FC52B3D20D10051AC6B /* Firebase Configuration */,
 				E80A10132B3D0B3B00C86585 /* Sources */,
 				E80A10142B3D0B3B00C86585 /* Frameworks */,
@@ -154,7 +162,7 @@
 			);
 			dependencies = (
 			);
-			name = "Aiba Digital";
+			name = AibaDigital;
 			productName = "Aiba Digital";
 			productReference = E80A10172B3D0B3B00C86585 /* 艾巴數位.app */;
 			productType = "com.apple.product-type.application";
@@ -174,7 +182,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E80A10122B3D0B3B00C86585 /* Build configuration list for PBXProject "Aiba Digital" */;
+			buildConfigurationList = E80A10122B3D0B3B00C86585 /* Build configuration list for PBXProject "AibaDigital" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -187,7 +195,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E80A10162B3D0B3B00C86585 /* Aiba Digital */,
+				E80A10162B3D0B3B00C86585 /* AibaDigital */,
 			);
 		};
 /* End PBXProject section */
@@ -263,6 +271,25 @@
 			shellPath = /bin/sh;
 			shellScript = "${PROJECT_DIR}/Scripts/BuildPhase/firebase_config.sh\n";
 		};
+		E88E1FC72B3D371D0051AC6B /* Env Configuration */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Env Configuration";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PROJECT_DIR}/Scripts/BuildPhase/env_config.sh\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -273,6 +300,7 @@
 				E80A101F2B3D0B3B00C86585 /* ViewController.swift in Sources */,
 				E80A101B2B3D0B3B00C86585 /* AppDelegate.swift in Sources */,
 				E80A101D2B3D0B3B00C86585 /* SceneDelegate.swift in Sources */,
+				C2FD098D08EE8C9F3E87F4F3 /* Config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,7 +451,7 @@
 				DEVELOPMENT_TEAM = ZKX4347K9W;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Aiba Digital/App/Info.plist";
+				INFOPLIST_FILE = AibaDigital/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -454,7 +482,7 @@
 				DEVELOPMENT_TEAM = ZKX4347K9W;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Aiba Digital/App/Info.plist";
+				INFOPLIST_FILE = AibaDigital/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -549,7 +577,7 @@
 				DEVELOPMENT_TEAM = ZKX4347K9W;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Aiba Digital/App/Info.plist";
+				INFOPLIST_FILE = AibaDigital/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -637,7 +665,7 @@
 				DEVELOPMENT_TEAM = ZKX4347K9W;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Aiba Digital/App/Info.plist";
+				INFOPLIST_FILE = AibaDigital/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -732,7 +760,7 @@
 				DEVELOPMENT_TEAM = ZKX4347K9W;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Aiba Digital/App/Info.plist";
+				INFOPLIST_FILE = AibaDigital/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -820,7 +848,7 @@
 				DEVELOPMENT_TEAM = ZKX4347K9W;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Aiba Digital/App/Info.plist";
+				INFOPLIST_FILE = AibaDigital/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -842,7 +870,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E80A10122B3D0B3B00C86585 /* Build configuration list for PBXProject "Aiba Digital" */ = {
+		E80A10122B3D0B3B00C86585 /* Build configuration list for PBXProject "AibaDigital" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E80A10292B3D0B3C00C86585 /* Debug Production */,
@@ -855,7 +883,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = "Release Production";
 		};
-		E80A102B2B3D0B3C00C86585 /* Build configuration list for PBXNativeTarget "Aiba Digital" */ = {
+		E80A102B2B3D0B3C00C86585 /* Build configuration list for PBXNativeTarget "AibaDigital" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E80A102C2B3D0B3C00C86585 /* Debug Production */,
