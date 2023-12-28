@@ -29,6 +29,10 @@
 		E80A10232B3D0B3C00C86585 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E80A10262B3D0B3C00C86585 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E80A10282B3D0B3C00C86585 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E88E1FBA2B3D1A540051AC6B /* GoogleService-Info-Stage.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Stage.plist"; sourceTree = "<group>"; };
+		E88E1FBC2B3D1AE70051AC6B /* GoogleService-Info-Prod.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Prod.plist"; sourceTree = "<group>"; };
+		E88E1FBE2B3D1B950051AC6B /* GoogleService-Info-Dev.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Dev.plist"; sourceTree = "<group>"; };
+		E88E1FC12B3D1C710051AC6B /* firebase_config.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = firebase_config.sh; sourceTree = "<group>"; };
 		FF6C215A792AA450DEB57C02 /* Pods_Aiba_Digital.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aiba_Digital.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -56,6 +60,8 @@
 			isa = PBXGroup;
 			children = (
 				E80A10192B3D0B3B00C86585 /* Aiba Digital */,
+				E8EFF45E2B3D18C500063180 /* Scripts */,
+				E88E1FC32B3D1F130051AC6B /* Firebase */,
 				E80A10182B3D0B3B00C86585 /* Products */,
 				EF2FB4A80E401D391717705B /* Pods */,
 				1A5E2CCF90722764A8B41A77 /* Frameworks */,
@@ -91,6 +97,32 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		E88E1FBF2B3D1C1D0051AC6B /* BuildPhase */ = {
+			isa = PBXGroup;
+			children = (
+				E88E1FC12B3D1C710051AC6B /* firebase_config.sh */,
+			);
+			path = BuildPhase;
+			sourceTree = "<group>";
+		};
+		E88E1FC32B3D1F130051AC6B /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				E88E1FBA2B3D1A540051AC6B /* GoogleService-Info-Stage.plist */,
+				E88E1FBC2B3D1AE70051AC6B /* GoogleService-Info-Prod.plist */,
+				E88E1FBE2B3D1B950051AC6B /* GoogleService-Info-Dev.plist */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		E8EFF45E2B3D18C500063180 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				E88E1FBF2B3D1C1D0051AC6B /* BuildPhase */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
 		EF2FB4A80E401D391717705B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,7 +133,6 @@
 				207E5E21E26459178886E247 /* Pods-Aiba Digital.release staging.xcconfig */,
 				2802D4A2D3EFDD235F7F428D /* Pods-Aiba Digital.release development.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -113,6 +144,7 @@
 			buildConfigurationList = E80A102B2B3D0B3C00C86585 /* Build configuration list for PBXNativeTarget "Aiba Digital" */;
 			buildPhases = (
 				5D9A76F6E3FA7F65BAE9CDF1 /* [CP] Check Pods Manifest.lock */,
+				E88E1FC52B3D20D10051AC6B /* Firebase Configuration */,
 				E80A10132B3D0B3B00C86585 /* Sources */,
 				E80A10142B3D0B3B00C86585 /* Frameworks */,
 				E80A10152B3D0B3B00C86585 /* Resources */,
@@ -211,6 +243,25 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Aiba Digital/Pods-Aiba Digital-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		E88E1FC52B3D20D10051AC6B /* Firebase Configuration */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Firebase Configuration";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PROJECT_DIR}/Scripts/BuildPhase/firebase_config.sh\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
