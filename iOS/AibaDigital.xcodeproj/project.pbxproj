@@ -11,9 +11,10 @@
 		37C2DF21126EDA84E154D987 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C46F518E474C79DAAE88FBA /* Config.swift */; };
 		E80A101B2B3D0B3B00C86585 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80A101A2B3D0B3B00C86585 /* AppDelegate.swift */; };
 		E80A101D2B3D0B3B00C86585 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80A101C2B3D0B3B00C86585 /* SceneDelegate.swift */; };
-		E80A101F2B3D0B3B00C86585 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80A101E2B3D0B3B00C86585 /* ViewController.swift */; };
 		E80A10242B3D0B3C00C86585 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E80A10232B3D0B3C00C86585 /* Assets.xcassets */; };
 		E80A10272B3D0B3C00C86585 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E80A10252B3D0B3C00C86585 /* LaunchScreen.storyboard */; };
+		E81942C62B3D6D7500DD1D06 /* Appfile in Resources */ = {isa = PBXBuildFile; fileRef = E81942C42B3D6D7500DD1D06 /* Appfile */; };
+		E81942C72B3D6D7500DD1D06 /* Fastfile in Resources */ = {isa = PBXBuildFile; fileRef = E81942C52B3D6D7500DD1D06 /* Fastfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,10 +28,12 @@
 		E80A10172B3D0B3B00C86585 /* 艾巴數位.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "艾巴數位.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E80A101A2B3D0B3B00C86585 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E80A101C2B3D0B3B00C86585 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E80A101E2B3D0B3B00C86585 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E80A10232B3D0B3C00C86585 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E80A10262B3D0B3C00C86585 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E80A10282B3D0B3C00C86585 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E81942C42B3D6D7500DD1D06 /* Appfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = Appfile; sourceTree = "<group>"; };
+		E81942C52B3D6D7500DD1D06 /* Fastfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = Fastfile; sourceTree = "<group>"; };
+		E83731B12B3D9F50000308F7 /* AibaDigital.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AibaDigital.entitlements; sourceTree = "<group>"; };
 		E88E1FBA2B3D1A540051AC6B /* GoogleService-Info-Stage.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Stage.plist"; sourceTree = "<group>"; };
 		E88E1FBC2B3D1AE70051AC6B /* GoogleService-Info-Prod.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Prod.plist"; sourceTree = "<group>"; };
 		E88E1FBE2B3D1B950051AC6B /* GoogleService-Info-Dev.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Dev.plist"; sourceTree = "<group>"; };
@@ -65,6 +68,7 @@
 			children = (
 				E80A10192B3D0B3B00C86585 /* AibaDigital */,
 				E8EFF45E2B3D18C500063180 /* Scripts */,
+				E81942C32B3D6D7500DD1D06 /* fastlane */,
 				E88E1FC32B3D1F130051AC6B /* Firebase */,
 				E80A10182B3D0B3B00C86585 /* Products */,
 				EF2FB4A80E401D391717705B /* Pods */,
@@ -91,16 +95,25 @@
 		E80A102E2B3D0B8200C86585 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				E83731B12B3D9F50000308F7 /* AibaDigital.entitlements */,
+				E80A10252B3D0B3C00C86585 /* LaunchScreen.storyboard */,
+				E80A10232B3D0B3C00C86585 /* Assets.xcassets */,
+				E80A10282B3D0B3C00C86585 /* Info.plist */,
 				E88E1FC82B3D38940051AC6B /* Config.stencil */,
 				E80A101A2B3D0B3B00C86585 /* AppDelegate.swift */,
 				E80A101C2B3D0B3B00C86585 /* SceneDelegate.swift */,
-				E80A101E2B3D0B3B00C86585 /* ViewController.swift */,
-				E80A10232B3D0B3C00C86585 /* Assets.xcassets */,
-				E80A10252B3D0B3C00C86585 /* LaunchScreen.storyboard */,
-				E80A10282B3D0B3C00C86585 /* Info.plist */,
 				1C46F518E474C79DAAE88FBA /* Config.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		E81942C32B3D6D7500DD1D06 /* fastlane */ = {
+			isa = PBXGroup;
+			children = (
+				E81942C42B3D6D7500DD1D06 /* Appfile */,
+				E81942C52B3D6D7500DD1D06 /* Fastfile */,
+			);
+			path = fastlane;
 			sourceTree = "<group>";
 		};
 		E88E1FBF2B3D1C1D0051AC6B /* BuildPhase */ = {
@@ -205,7 +218,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E81942C62B3D6D7500DD1D06 /* Appfile in Resources */,
 				E80A10272B3D0B3C00C86585 /* LaunchScreen.storyboard in Resources */,
+				E81942C72B3D6D7500DD1D06 /* Fastfile in Resources */,
 				E80A10242B3D0B3C00C86585 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,7 +312,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E80A101F2B3D0B3B00C86585 /* ViewController.swift in Sources */,
 				E80A101B2B3D0B3B00C86585 /* AppDelegate.swift in Sources */,
 				E80A101D2B3D0B3B00C86585 /* SceneDelegate.swift in Sources */,
 				37C2DF21126EDA84E154D987 /* Config.swift in Sources */,
@@ -445,6 +459,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon (Production)";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AibaDigital/App/AibaDigital.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -476,6 +491,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon (Production)";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AibaDigital/App/AibaDigital.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -571,6 +587,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon (Development)";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AibaDigital/App/AibaDigital.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -659,6 +676,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon (Development)";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AibaDigital/App/AibaDigital.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -754,6 +772,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon (Staging)";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AibaDigital/App/AibaDigital.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -842,6 +861,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon (Staging)";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AibaDigital/App/AibaDigital.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
