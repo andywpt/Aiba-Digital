@@ -90,7 +90,7 @@ fastlane/test_output
 # Custom 
 *.DS_Store
 *.env
-*.env.stage
+*.env.dev
 **/Config.swift
 
 iOSInjectionProject/

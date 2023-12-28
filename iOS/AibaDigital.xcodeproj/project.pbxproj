@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1EC8613BFA3EF306B5017C0F /* Pods_Aiba_Digital.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF6C215A792AA450DEB57C02 /* Pods_Aiba_Digital.framework */; };
-		C2FD098D08EE8C9F3E87F4F3 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18B31B63E48B36E5163B561 /* Config.swift */; };
+		37C2DF21126EDA84E154D987 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C46F518E474C79DAAE88FBA /* Config.swift */; };
 		E80A101B2B3D0B3B00C86585 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80A101A2B3D0B3B00C86585 /* AppDelegate.swift */; };
 		E80A101D2B3D0B3B00C86585 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80A101C2B3D0B3B00C86585 /* SceneDelegate.swift */; };
 		E80A101F2B3D0B3B00C86585 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80A101E2B3D0B3B00C86585 /* ViewController.swift */; };
@@ -17,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C46F518E474C79DAAE88FBA /* Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		207E5E21E26459178886E247 /* Pods-Aiba Digital.release staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aiba Digital.release staging.xcconfig"; path = "Target Support Files/Pods-Aiba Digital/Pods-Aiba Digital.release staging.xcconfig"; sourceTree = "<group>"; };
 		2802D4A2D3EFDD235F7F428D /* Pods-Aiba Digital.release development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aiba Digital.release development.xcconfig"; path = "Target Support Files/Pods-Aiba Digital/Pods-Aiba Digital.release development.xcconfig"; sourceTree = "<group>"; };
 		39EA5E050BDAF8D6FAD17C62 /* Pods-Aiba Digital.release production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aiba Digital.release production.xcconfig"; path = "Target Support Files/Pods-Aiba Digital/Pods-Aiba Digital.release production.xcconfig"; sourceTree = "<group>"; };
@@ -36,7 +37,6 @@
 		E88E1FC12B3D1C710051AC6B /* firebase_config.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = firebase_config.sh; sourceTree = "<group>"; };
 		E88E1FC62B3D37140051AC6B /* env_config.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = env_config.sh; sourceTree = "<group>"; };
 		E88E1FC82B3D38940051AC6B /* Config.stencil */ = {isa = PBXFileReference; lastKnownFileType = text; path = Config.stencil; sourceTree = "<group>"; };
-		F18B31B63E48B36E5163B561 /* Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		FF6C215A792AA450DEB57C02 /* Pods_Aiba_Digital.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aiba_Digital.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -98,7 +98,7 @@
 				E80A10232B3D0B3C00C86585 /* Assets.xcassets */,
 				E80A10252B3D0B3C00C86585 /* LaunchScreen.storyboard */,
 				E80A10282B3D0B3C00C86585 /* Info.plist */,
-				F18B31B63E48B36E5163B561 /* Config.swift */,
+				1C46F518E474C79DAAE88FBA /* Config.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -300,7 +300,7 @@
 				E80A101F2B3D0B3B00C86585 /* ViewController.swift in Sources */,
 				E80A101B2B3D0B3B00C86585 /* AppDelegate.swift in Sources */,
 				E80A101D2B3D0B3B00C86585 /* SceneDelegate.swift in Sources */,
-				C2FD098D08EE8C9F3E87F4F3 /* Config.swift in Sources */,
+				37C2DF21126EDA84E154D987 /* Config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
