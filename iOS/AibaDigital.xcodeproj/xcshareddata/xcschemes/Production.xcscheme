@@ -16,21 +16,21 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E80A10162B3D0B3B00C86585"
                BuildableName = "&#x827e;&#x5df4;&#x6578;&#x4f4d;.app"
-               BlueprintName = "Aiba Digital"
-               ReferencedContainer = "container:Aiba Digital.xcodeproj">
+               BlueprintName = "AibaDigital"
+               ReferencedContainer = "container:AibaDigital.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
-      buildConfiguration = "Debug Development"
+      buildConfiguration = "Debug Production"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
       shouldAutocreateTestPlan = "YES">
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug Development"
+      buildConfiguration = "Debug Production"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -45,13 +45,13 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E80A10162B3D0B3B00C86585"
             BuildableName = "&#x827e;&#x5df4;&#x6578;&#x4f4d;.app"
-            BlueprintName = "Aiba Digital"
-            ReferencedContainer = "container:Aiba Digital.xcodeproj">
+            BlueprintName = "AibaDigital"
+            ReferencedContainer = "container:AibaDigital.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
-      buildConfiguration = "Release Development"
+      buildConfiguration = "Release Production"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
@@ -62,16 +62,16 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E80A10162B3D0B3B00C86585"
             BuildableName = "&#x827e;&#x5df4;&#x6578;&#x4f4d;.app"
-            BlueprintName = "Aiba Digital"
-            ReferencedContainer = "container:Aiba Digital.xcodeproj">
+            BlueprintName = "AibaDigital"
+            ReferencedContainer = "container:AibaDigital.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
-      buildConfiguration = "Debug Development">
+      buildConfiguration = "Debug Production">
    </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "Release Development"
+      buildConfiguration = "Release Production"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>
