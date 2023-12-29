@@ -23,12 +23,14 @@ jobs:
         with:
           ruby-version: 3.2.1
           bundler-cache: true
+          working-directory: ./iOS
 
       - name: Create .env file
         env: 
           ALL_VARIABLES: ${{ toJson(vars) }}
           ALL_SECRETS: ${{ toJson(secrets) }}
         run: |
+          cd iOS
           touch .env
           parse() {
             jq -r 'to_entries | sort_by(.key) | .[] | "\(.key)=\(.value)"'
@@ -39,6 +41,7 @@ jobs:
       - name: Setup project
         run: |
           gem install xcodeproj
+          cd iOS
           ruby start.rb
           
       - name: Decode signing certificate into a file
@@ -52,5 +55,8 @@ jobs:
           APPSTORE_API_ISSUER_ID: ${{ secrets.APPSTORE_API_ISSUER_ID }}
           APPSTORE_API_KEY_BASE64: ${{ secrets.APPSTORE_API_KEY_BASE64 }}
           APPLE_CERTIFICATE_PASSWORD: ${{ secrets.APPLE_CERTIFICATE_PASSWORD }}
-          APPLE_CERTIFICATE_PATH: certificate.p12
-        run: bundle exec fastlane ios submit_to_testflight
+          APPLE_CERTIFICATE_PATH: ../certificate.p12
+        run: |
+          cd iOS
+          pwd
+          bundle exec fastlane ios submit_to_testflight
