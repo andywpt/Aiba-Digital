@@ -55,7 +55,7 @@ jobs:
           APPSTORE_API_ISSUER_ID: ${{ secrets.APPSTORE_API_ISSUER_ID }}
           APPSTORE_API_KEY_BASE64: ${{ secrets.APPSTORE_API_KEY_BASE64 }}
           APPLE_CERTIFICATE_PASSWORD: ${{ secrets.APPLE_CERTIFICATE_PASSWORD }}
-          APPLE_CERTIFICATE_PATH: ../certificate.p12
+          APPLE_CERTIFICATE_PATH: certificate.p12
         run: |
           cd iOS
           pwd
