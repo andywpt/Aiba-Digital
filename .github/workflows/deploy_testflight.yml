@@ -1,0 +1,56 @@
+name: Submit to TestFlight
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "iOS/**"
+      - '!iOS/**.md'
+jobs:
+  build:
+    environment: iOS
+    name: Build and Test default scheme using any available iPhone simulator
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        
+      - name: Set up ruby environment
+        uses: ruby/setup-ruby@v1.138.0
+        with:
+          ruby-version: 3.2.1
+          bundler-cache: true
+
+      - name: Create .env file
+        env: 
+          ALL_VARIABLES: ${{ toJson(vars) }}
+          ALL_SECRETS: ${{ toJson(secrets) }}
+        run: |
+          touch .env
+          parse() {
+            jq -r 'to_entries | sort_by(.key) | .[] | "\(.key)=\(.value)"'
+          }
+          echo $ALL_VARIABLES | parse >> .env
+          echo $ALL_SECRETS | parse >> .env
+          
+      - name: Setup project
+        run: |
+          gem install xcodeproj
+          ruby start.rb
+          
+      - name: Decode signing certificate into a file
+        env:
+          CERTIFICATE_BASE64: ${{ secrets.APPLE_CERTIFICATE_BASE64 }}
+        run: echo "$CERTIFICATE_BASE64" | base64 --decode > certificate.p12
+
+      - name: Build & upload iOS binary to Testflight
+        env:
+          APPSTORE_API_KEY_ID: ${{ secrets.APPSTORE_API_KEY_ID }}
+          APPSTORE_API_ISSUER_ID: ${{ secrets.APPSTORE_API_ISSUER_ID }}
+          APPSTORE_API_PRIVATE_KEY: ${{ secrets.APPSTORE_API_PRIVATE_KEY }}
+          APPLE_CERTIFICATE_PASSWORD: ${{ secrets.APPLE_CERTIFICATE_PASSWORD }}
+          APPLE_CERTIFICATE_PATH: certificate.p12
+        run: bundle exec fastlane ios submit_to_testflight
