@@ -40,9 +40,10 @@ jobs:
       - name: Setup project
         run: |
           gem install xcodeproj
-          ls -1
+          pwd
           cd iOS
-          ls -1
+          echo "cd into iOS"
+          pwd
           ruby start.rb
           
       - name: Decode signing certificate into a file
@@ -57,4 +58,7 @@ jobs:
           APPSTORE_API_KEY_BASE64: ${{ secrets.APPSTORE_API_KEY_BASE64 }}
           APPLE_CERTIFICATE_PASSWORD: ${{ secrets.APPLE_CERTIFICATE_PASSWORD }}
           APPLE_CERTIFICATE_PATH: certificate.p12
-        run: bundle exec fastlane ios submit_to_testflight
+        run: |
+          pwd
+          cd iOS
+          bundle exec fastlane ios submit_to_testflight
