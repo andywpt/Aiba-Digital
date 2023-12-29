@@ -40,6 +40,9 @@ jobs:
       - name: Setup project
         run: |
           gem install xcodeproj
+          ls -1
+          cd iOS
+          ls -1
           ruby start.rb
           
       - name: Decode signing certificate into a file
