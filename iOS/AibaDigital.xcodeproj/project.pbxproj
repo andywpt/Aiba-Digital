@@ -34,9 +34,8 @@
 		E81942C42B3D6D7500DD1D06 /* Appfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = Appfile; sourceTree = "<group>"; };
 		E81942C52B3D6D7500DD1D06 /* Fastfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = Fastfile; sourceTree = "<group>"; };
 		E83731B12B3D9F50000308F7 /* AibaDigital.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AibaDigital.entitlements; sourceTree = "<group>"; };
-		E88E1FBA2B3D1A540051AC6B /* GoogleService-Info-Stage.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Stage.plist"; sourceTree = "<group>"; };
+		E86645A92B3DE16100AFC81A /* GoogleService-Info-Dev.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Dev.plist"; sourceTree = "<group>"; };
 		E88E1FBC2B3D1AE70051AC6B /* GoogleService-Info-Prod.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Prod.plist"; sourceTree = "<group>"; };
-		E88E1FBE2B3D1B950051AC6B /* GoogleService-Info-Dev.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Dev.plist"; sourceTree = "<group>"; };
 		E88E1FC12B3D1C710051AC6B /* firebase_config.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = firebase_config.sh; sourceTree = "<group>"; };
 		E88E1FC62B3D37140051AC6B /* env_config.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = env_config.sh; sourceTree = "<group>"; };
 		E88E1FC82B3D38940051AC6B /* Config.stencil */ = {isa = PBXFileReference; lastKnownFileType = text; path = Config.stencil; sourceTree = "<group>"; };
@@ -128,9 +127,8 @@
 		E88E1FC32B3D1F130051AC6B /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
-				E88E1FBA2B3D1A540051AC6B /* GoogleService-Info-Stage.plist */,
 				E88E1FBC2B3D1AE70051AC6B /* GoogleService-Info-Prod.plist */,
-				E88E1FBE2B3D1B950051AC6B /* GoogleService-Info-Dev.plist */,
+				E86645A92B3DE16100AFC81A /* GoogleService-Info-Dev.plist */,
 			);
 			path = Firebase;
 			sourceTree = "<group>";

@@ -13,7 +13,7 @@ file=""
 if [ "${CONFIGURATION}" == "Release Production" ] || [ "${CONFIGURATION}" == "Debug Production" ]; then
     file=${SOURCE_PATH}/GoogleService-Info-Prod.plist
 elif [ "${CONFIGURATION}" == "Release Staging" ] || [ "${CONFIGURATION}" == "Debug Staging" ]; then
-    file=${SOURCE_PATH}/GoogleService-Info-Stage.plist
+    file=${SOURCE_PATH}/GoogleService-Info-Prod.plist
 elif [ "${CONFIGURATION}" == "Release Development" ] || [ "${CONFIGURATION}" == "Debug Development" ]; then
     file=${SOURCE_PATH}/GoogleService-Info-Dev.plist
 else

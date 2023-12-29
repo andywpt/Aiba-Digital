@@ -3,7 +3,7 @@
 enum Config {
 
    static let environment = "{{ argument.ENVIRONMENT }}"
-   static let baseUrl = "{{ argument.BASE_URL }}"
+   static let baseUrl = "{{ argument.API_BASE_URL }}"
    
    enum Line {
        static let channelId = "{{ argument.LINE_LOGIN_CHANNEL_ID }}"
