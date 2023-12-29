@@ -1,0 +1,96 @@
+
+platform :ios do
+ desc "Load the App Store Connect API token to use in other fastlane tools and actions"
+ lane :create_api_token do
+   app_store_connect_api_key(
+     key_id: ENV["APPSTORE_API_KEY_ID"],
+     issuer_id: ENV["APPSTORE_API_ISSUER_ID"],
+     key_content: ENV["APPSTORE_API_KEY_BASE64"],
+     is_key_content_base64: true
+   )
+ end
+ 
+ desc "Increment app build number"
+ lane :update_app_build_number do
+   current_version = get_version_number()
+   latest_build_number = latest_testflight_build_number(version: current_version)
+   increment_build_number(build_number: (latest_build_number + 1))
+ end
+
+ desc "Install distribution certificate in the keychain"
+ lane :install_distribution_certificate do
+     
+   keychain_name = "signing"
+   keychain_password = ""
+   
+   delete_keychain(
+     name: keychain_name
+   ) if File.exist? File.expand_path("~/Library/Keychains/#{keychain_name}-db")
+
+   create_keychain(
+     name: keychain_name,
+     password: keychain_password,
+     default_keychain: true,
+     unlock: true,
+     timeout: 0,
+     require_create: true
+   )
+
+   import_certificate(
+     certificate_path: ENV["APPLE_CERTIFICATE_PATH"],
+     certificate_password: ENV["APPLE_CERTIFICATE_PASSWORD"],
+     keychain_name: keychain_name,
+     keychain_password: keychain_password,
+     log_output: true
+   )
+ end
+ 
+ desc "Configure code signing settings in Xcode before build"
+ lane :configure_code_signing_settings do |options|
+     # install provision profile, creates new one if needed
+     sigh
+     team_id = CredentialsManager::AppfileConfig.try_fetch_value(:team_id)
+     profile_name = lane_context[SharedValues::SIGH_NAME]
+     # select the installed provision profile
+     update_code_signing_settings(
+         code_sign_identity: "iPhone Distribution",
+         team_id: team_id,
+         profile_name: profile_name,
+         build_configurations: ["Release Staging"]
+     )
+ end
+
+ desc "Archive app for release"
+ private_lane :archive_beta_app do
+    gym(
+        workspace: "AibaDigital.xcworkspace",
+        scheme: "Staging",
+        output_name: "beta.ipa",
+        export_method: "app-store",
+        export_options: {
+            testFlightInternalTestingOnly: true
+        }
+    )
+ end
+
+ desc "Upload to TestFlight"
+ private_lane :upload_ipa_to_testflight do
+    testflight
+ end
+    
+ lane :submit_to_testflight do
+    p CredentialsManager::AppfileConfig.try_fetch_value(:app_identifier)
+    create_api_token
+    update_app_build_number
+    install_distribution_certificate
+    configure_code_signing_settings
+    archive_beta_app
+    upload_ipa_to_testflight
+ end
+ 
+ lane :submit_to_appstore do
+    p CredentialsManager::AppfileConfig.try_fetch_value(:app_identifier)
+ end
+ 
+end
+

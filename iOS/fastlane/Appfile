@@ -1,0 +1,10 @@
+app_identifier "empty" # The bundle identifier of your app
+team_id "ZKX4347K9W"
+
+for_lane :submit_to_testflight do
+  app_identifier "com.aibadigital.Aiba-Digital-Stage"
+end
+
+for_lane :submit_to_appstore do
+  app_identifier "com.aibadigital.Aiba-Digital"
+end
