@@ -40,10 +40,7 @@ jobs:
       - name: Setup project
         run: |
           gem install xcodeproj
-          pwd
           cd iOS
-          echo "cd into iOS"
-          pwd
           ruby start.rb
           
       - name: Decode signing certificate into a file
@@ -60,5 +57,4 @@ jobs:
           APPLE_CERTIFICATE_PATH: certificate.p12
         run: |
           pwd
-          cd iOS
           bundle exec fastlane ios submit_to_testflight
