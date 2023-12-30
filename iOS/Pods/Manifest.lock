@@ -879,6 +879,7 @@ PODS:
   - Sourcery (2.1.1):
     - Sourcery/CLI-Only (= 2.1.1)
   - Sourcery/CLI-Only (2.1.1)
+  - SwiftGen (6.6.2)
   - SwipeCellKit (2.7.1)
   - tappay-ios-sdk (2.17.0)
 
@@ -900,6 +901,7 @@ DEPENDENCIES:
   - SkeletonView
   - SnapKit
   - Sourcery
+  - SwiftGen
   - SwipeCellKit
   - tappay-ios-sdk (from `https://github.com/TapPay/tappay-ios-sdk.git`)
 
@@ -953,6 +955,7 @@ SPEC REPOS:
     - SkeletonView
     - SnapKit
     - Sourcery
+    - SwiftGen
     - SwipeCellKit
 
 EXTERNAL SOURCES:
@@ -1013,9 +1016,10 @@ SPEC CHECKSUMS:
   SkeletonView: 5a050f6411e697abd4cda0a8d767013399dccd69
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
   Sourcery: 3a6e2e9bd439caeee302e8150dc712d2f8ef45b3
+  SwiftGen: 1366a7f71aeef49954ca5a63ba4bef6b0f24138c
   SwipeCellKit: 3972254a826da74609926daf59b08d6c72e619ea
   tappay-ios-sdk: f2f381f79775a0a54be3300abb7dab38a062596e
 
-PODFILE CHECKSUM: f1cbf002742dc8717745fe4bb785c4d18dbca0c3
+PODFILE CHECKSUM: 9d09a0ef2ae9302678d23556b5029cf6ec333fd2
 
 COCOAPODS: 1.14.3

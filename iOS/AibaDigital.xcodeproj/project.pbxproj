@@ -12,9 +12,14 @@
 		E80A101B2B3D0B3B00C86585 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80A101A2B3D0B3B00C86585 /* AppDelegate.swift */; };
 		E80A101D2B3D0B3B00C86585 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80A101C2B3D0B3B00C86585 /* SceneDelegate.swift */; };
 		E80A10242B3D0B3C00C86585 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E80A10232B3D0B3C00C86585 /* Assets.xcassets */; };
-		E80A10272B3D0B3C00C86585 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E80A10252B3D0B3C00C86585 /* LaunchScreen.storyboard */; };
 		E81942C62B3D6D7500DD1D06 /* Appfile in Resources */ = {isa = PBXBuildFile; fileRef = E81942C42B3D6D7500DD1D06 /* Appfile */; };
 		E81942C72B3D6D7500DD1D06 /* Fastfile in Resources */ = {isa = PBXBuildFile; fileRef = E81942C52B3D6D7500DD1D06 /* Fastfile */; };
+		E88A00932B3F300700D7762F /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E88A00922B3F300700D7762F /* Launch Screen.storyboard */; };
+		E88A00982B3FC5B500D7762F /* HYwulM.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E88A00962B3FC5B500D7762F /* HYwulM.ttf */; };
+		E88A00992B3FC5B500D7762F /* DFPZongYiW5-B5.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E88A00972B3FC5B500D7762F /* DFPZongYiW5-B5.ttf */; };
+		E88A009D2B3FC96C00D7762F /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88A009C2B3FC96C00D7762F /* Logo.swift */; };
+		E88A00B22B3FED0900D7762F /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = E88A00B12B3FED0900D7762F /* swiftgen.yml */; };
+		E88A00B52B3FFED000D7762F /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88A00B42B3FFED000D7762F /* Assets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,16 +35,22 @@
 		E80A101A2B3D0B3B00C86585 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E80A101C2B3D0B3B00C86585 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E80A10232B3D0B3C00C86585 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E80A10262B3D0B3C00C86585 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E80A10282B3D0B3C00C86585 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E81942C42B3D6D7500DD1D06 /* Appfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = Appfile; sourceTree = "<group>"; };
 		E81942C52B3D6D7500DD1D06 /* Fastfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = Fastfile; sourceTree = "<group>"; };
 		E83731B12B3D9F50000308F7 /* AibaDigital.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AibaDigital.entitlements; sourceTree = "<group>"; };
 		E86645A92B3DE16100AFC81A /* GoogleService-Info-Dev.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Dev.plist"; sourceTree = "<group>"; };
+		E88A00922B3F300700D7762F /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		E88A00962B3FC5B500D7762F /* HYwulM.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HYwulM.ttf; sourceTree = "<group>"; };
+		E88A00972B3FC5B500D7762F /* DFPZongYiW5-B5.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DFPZongYiW5-B5.ttf"; sourceTree = "<group>"; };
+		E88A009C2B3FC96C00D7762F /* Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
+		E88A00A32B3FDDE300D7762F /* swiftgen.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = swiftgen.sh; sourceTree = "<group>"; };
+		E88A00B12B3FED0900D7762F /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		E88A00B42B3FFED000D7762F /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		E88E1FBC2B3D1AE70051AC6B /* GoogleService-Info-Prod.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Prod.plist"; sourceTree = "<group>"; };
-		E88E1FC12B3D1C710051AC6B /* firebase_config.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = firebase_config.sh; sourceTree = "<group>"; };
+		E88E1FC12B3D1C710051AC6B /* firebase.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = firebase.sh; sourceTree = "<group>"; };
 		E88E1FC62B3D37140051AC6B /* env_config.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = env_config.sh; sourceTree = "<group>"; };
-		E88E1FC82B3D38940051AC6B /* Config.stencil */ = {isa = PBXFileReference; lastKnownFileType = text; path = Config.stencil; sourceTree = "<group>"; };
+		E88E1FC82B3D38940051AC6B /* config.stencil */ = {isa = PBXFileReference; lastKnownFileType = text; path = config.stencil; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +78,8 @@
 			children = (
 				E80A10192B3D0B3B00C86585 /* AibaDigital */,
 				E8EFF45E2B3D18C500063180 /* Scripts */,
+				E88A009E2B3FD07900D7762F /* Sourcery */,
+				E88A00B32B3FF7AB00D7762F /* SwiftGen */,
 				E81942C32B3D6D7500DD1D06 /* fastlane */,
 				E88E1FC32B3D1F130051AC6B /* Firebase */,
 				E80A10182B3D0B3B00C86585 /* Products */,
@@ -87,6 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				E80A102E2B3D0B8200C86585 /* App */,
+				E88A009A2B3FC93B00D7762F /* Views */,
+				E88A00A52B3FE2F500D7762F /* Extensions */,
+				E88A00952B3FC56600D7762F /* Fonts */,
 			);
 			path = AibaDigital;
 			sourceTree = "<group>";
@@ -95,12 +111,12 @@
 			isa = PBXGroup;
 			children = (
 				E83731B12B3D9F50000308F7 /* AibaDigital.entitlements */,
-				E80A10252B3D0B3C00C86585 /* LaunchScreen.storyboard */,
+				E88A00922B3F300700D7762F /* Launch Screen.storyboard */,
 				E80A10232B3D0B3C00C86585 /* Assets.xcassets */,
 				E80A10282B3D0B3C00C86585 /* Info.plist */,
-				E88E1FC82B3D38940051AC6B /* Config.stencil */,
 				E80A101A2B3D0B3B00C86585 /* AppDelegate.swift */,
 				E80A101C2B3D0B3B00C86585 /* SceneDelegate.swift */,
+				E88A00B42B3FFED000D7762F /* Assets.swift */,
 				1C46F518E474C79DAAE88FBA /* Config.swift */,
 			);
 			path = App;
@@ -115,11 +131,60 @@
 			path = fastlane;
 			sourceTree = "<group>";
 		};
+		E88A00952B3FC56600D7762F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E88A00972B3FC5B500D7762F /* DFPZongYiW5-B5.ttf */,
+				E88A00962B3FC5B500D7762F /* HYwulM.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		E88A009A2B3FC93B00D7762F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E88A009B2B3FC94600D7762F /* Launch */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E88A009B2B3FC94600D7762F /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				E88A009C2B3FC96C00D7762F /* Logo.swift */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		E88A009E2B3FD07900D7762F /* Sourcery */ = {
+			isa = PBXGroup;
+			children = (
+				E88E1FC82B3D38940051AC6B /* config.stencil */,
+			);
+			path = Sourcery;
+			sourceTree = "<group>";
+		};
+		E88A00A52B3FE2F500D7762F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E88A00B32B3FF7AB00D7762F /* SwiftGen */ = {
+			isa = PBXGroup;
+			children = (
+				E88A00B12B3FED0900D7762F /* swiftgen.yml */,
+			);
+			path = SwiftGen;
+			sourceTree = "<group>";
+		};
 		E88E1FBF2B3D1C1D0051AC6B /* BuildPhase */ = {
 			isa = PBXGroup;
 			children = (
-				E88E1FC12B3D1C710051AC6B /* firebase_config.sh */,
+				E88E1FC12B3D1C710051AC6B /* firebase.sh */,
 				E88E1FC62B3D37140051AC6B /* env_config.sh */,
+				E88A00A32B3FDDE300D7762F /* swiftgen.sh */,
 			);
 			path = BuildPhase;
 			sourceTree = "<group>";
@@ -162,6 +227,7 @@
 			buildConfigurationList = E80A102B2B3D0B3C00C86585 /* Build configuration list for PBXNativeTarget "AibaDigital" */;
 			buildPhases = (
 				D37DA9B710D9E1E0102050B9 /* [CP] Check Pods Manifest.lock */,
+				E88A00A42B3FDE4400D7762F /* Swiftgen */,
 				E88E1FC72B3D371D0051AC6B /* Env Configuration */,
 				E88E1FC52B3D20D10051AC6B /* Firebase Configuration */,
 				E80A10132B3D0B3B00C86585 /* Sources */,
@@ -217,9 +283,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E81942C62B3D6D7500DD1D06 /* Appfile in Resources */,
-				E80A10272B3D0B3C00C86585 /* LaunchScreen.storyboard in Resources */,
+				E88A00982B3FC5B500D7762F /* HYwulM.ttf in Resources */,
 				E81942C72B3D6D7500DD1D06 /* Fastfile in Resources */,
+				E88A00B22B3FED0900D7762F /* swiftgen.yml in Resources */,
+				E88A00932B3F300700D7762F /* Launch Screen.storyboard in Resources */,
 				E80A10242B3D0B3C00C86585 /* Assets.xcassets in Resources */,
+				E88A00992B3FC5B500D7762F /* DFPZongYiW5-B5.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +334,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E88A00A42B3FDE4400D7762F /* Swiftgen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftgen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n${PROJECT_DIR}/Scripts/BuildPhase/swiftgen.sh\n";
+		};
 		E88E1FC52B3D20D10051AC6B /* Firebase Configuration */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
@@ -282,7 +369,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "${PROJECT_DIR}/Scripts/BuildPhase/firebase_config.sh\n";
+			shellScript = "${PROJECT_DIR}/Scripts/BuildPhase/firebase.sh\n";
 		};
 		E88E1FC72B3D371D0051AC6B /* Env Configuration */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -312,22 +399,13 @@
 			files = (
 				E80A101B2B3D0B3B00C86585 /* AppDelegate.swift in Sources */,
 				E80A101D2B3D0B3B00C86585 /* SceneDelegate.swift in Sources */,
+				E88A009D2B3FC96C00D7762F /* Logo.swift in Sources */,
+				E88A00B52B3FFED000D7762F /* Assets.swift in Sources */,
 				37C2DF21126EDA84E154D987 /* Config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		E80A10252B3D0B3C00C86585 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E80A10262B3D0B3C00C86585 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E80A10292B3D0B3C00C86585 /* Debug Production */ = {
@@ -466,7 +544,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AibaDigital/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -499,7 +577,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AibaDigital/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -596,7 +674,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AibaDigital/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -686,7 +764,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AibaDigital/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -783,7 +861,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AibaDigital/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -793,7 +871,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aibadigital.Aiba-Digital-Stage";
-				PRODUCT_NAME = "艾巴數位 Beta";
+				PRODUCT_NAME = "艾巴 Beta";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -873,7 +951,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AibaDigital/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -883,7 +961,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aibadigital.Aiba-Digital-Stage";
-				PRODUCT_NAME = "艾巴數位 Beta";
+				PRODUCT_NAME = "艾巴 Beta";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
