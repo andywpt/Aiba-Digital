@@ -41,7 +41,6 @@
 		E83731B12B3D9F50000308F7 /* AibaDigital.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AibaDigital.entitlements; sourceTree = "<group>"; };
 		E86645A92B3DE16100AFC81A /* GoogleService-Info-Dev.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Dev.plist"; sourceTree = "<group>"; };
 		E88A00922B3F300700D7762F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-
 		E88A00962B3FC5B500D7762F /* HYwulM.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HYwulM.ttf; sourceTree = "<group>"; };
 		E88A00972B3FC5B500D7762F /* DFPZongYiW5-B5.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DFPZongYiW5-B5.ttf"; sourceTree = "<group>"; };
 		E88A009C2B3FC96C00D7762F /* Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
