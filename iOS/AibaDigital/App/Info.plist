@@ -50,6 +50,11 @@
 	<array>
 		<string>lineauth2</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>DFPZongYiW5-B5.ttf</string>
+		<string>HYwulM.tff</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
