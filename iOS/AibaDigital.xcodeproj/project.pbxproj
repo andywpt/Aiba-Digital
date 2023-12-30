@@ -14,7 +14,7 @@
 		E80A10242B3D0B3C00C86585 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E80A10232B3D0B3C00C86585 /* Assets.xcassets */; };
 		E81942C62B3D6D7500DD1D06 /* Appfile in Resources */ = {isa = PBXBuildFile; fileRef = E81942C42B3D6D7500DD1D06 /* Appfile */; };
 		E81942C72B3D6D7500DD1D06 /* Fastfile in Resources */ = {isa = PBXBuildFile; fileRef = E81942C52B3D6D7500DD1D06 /* Fastfile */; };
-		E88A00932B3F300700D7762F /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E88A00922B3F300700D7762F /* Launch Screen.storyboard */; };
+		E88A00932B3F300700D7762F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E88A00922B3F300700D7762F /* LaunchScreen.storyboard */; };
 		E88A00982B3FC5B500D7762F /* HYwulM.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E88A00962B3FC5B500D7762F /* HYwulM.ttf */; };
 		E88A00992B3FC5B500D7762F /* DFPZongYiW5-B5.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E88A00972B3FC5B500D7762F /* DFPZongYiW5-B5.ttf */; };
 		E88A009D2B3FC96C00D7762F /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E88A009C2B3FC96C00D7762F /* Logo.swift */; };
@@ -40,7 +40,7 @@
 		E81942C52B3D6D7500DD1D06 /* Fastfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = Fastfile; sourceTree = "<group>"; };
 		E83731B12B3D9F50000308F7 /* AibaDigital.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AibaDigital.entitlements; sourceTree = "<group>"; };
 		E86645A92B3DE16100AFC81A /* GoogleService-Info-Dev.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Dev.plist"; sourceTree = "<group>"; };
-		E88A00922B3F300700D7762F /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		E88A00922B3F300700D7762F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E88A00962B3FC5B500D7762F /* HYwulM.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HYwulM.ttf; sourceTree = "<group>"; };
 		E88A00972B3FC5B500D7762F /* DFPZongYiW5-B5.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DFPZongYiW5-B5.ttf"; sourceTree = "<group>"; };
 		E88A009C2B3FC96C00D7762F /* Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
@@ -111,7 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				E83731B12B3D9F50000308F7 /* AibaDigital.entitlements */,
-				E88A00922B3F300700D7762F /* Launch Screen.storyboard */,
+				E88A00922B3F300700D7762F /* LaunchScreen.storyboard */,
 				E80A10232B3D0B3C00C86585 /* Assets.xcassets */,
 				E80A10282B3D0B3C00C86585 /* Info.plist */,
 				E80A101A2B3D0B3B00C86585 /* AppDelegate.swift */,
@@ -286,7 +286,7 @@
 				E88A00982B3FC5B500D7762F /* HYwulM.ttf in Resources */,
 				E81942C72B3D6D7500DD1D06 /* Fastfile in Resources */,
 				E88A00B22B3FED0900D7762F /* swiftgen.yml in Resources */,
-				E88A00932B3F300700D7762F /* Launch Screen.storyboard in Resources */,
+				E88A00932B3F300700D7762F /* LaunchScreen.storyboard in Resources */,
 				E80A10242B3D0B3C00C86585 /* Assets.xcassets in Resources */,
 				E88A00992B3FC5B500D7762F /* DFPZongYiW5-B5.ttf in Resources */,
 			);
@@ -544,7 +544,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AibaDigital/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -556,9 +556,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aibadigital.Aiba-Digital";
 				PRODUCT_NAME = "艾巴數位";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = "Debug Production";
 		};
@@ -577,7 +580,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AibaDigital/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -589,9 +592,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aibadigital.Aiba-Digital";
 				PRODUCT_NAME = "艾巴數位";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = "Release Production";
 		};
@@ -674,7 +680,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AibaDigital/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -686,9 +692,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aibadigital.Aiba-Digital-Dev";
 				PRODUCT_NAME = "艾巴數位 Dev";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = "Debug Development";
 		};
@@ -764,7 +773,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AibaDigital/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -776,9 +785,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aibadigital.Aiba-Digital-Dev";
 				PRODUCT_NAME = "艾巴數位 Dev";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = "Release Development";
 		};
@@ -861,7 +873,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AibaDigital/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -873,9 +885,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aibadigital.Aiba-Digital-Stage";
 				PRODUCT_NAME = "艾巴 Beta";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = "Debug Staging";
 		};
@@ -951,7 +966,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AibaDigital/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -963,9 +978,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aibadigital.Aiba-Digital-Stage";
 				PRODUCT_NAME = "艾巴 Beta";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = "Release Staging";
 		};
