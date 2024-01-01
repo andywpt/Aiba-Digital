@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>754086877220-8s59r05sttnln5un3dt94g1egcbfv75t.apps.googleusercontent.com</string>
+	<string>887260297856-28pipgjmm1nf132m3bc304o44hp3p89v.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.754086877220-8s59r05sttnln5un3dt94g1egcbfv75t</string>
+	<string>com.googleusercontent.apps.887260297856-28pipgjmm1nf132m3bc304o44hp3p89v</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBGEf-Zwdj7WChdjEfFOu_k5ruBEFg1Bj0</string>
+	<string>AIzaSyAKQPyc_zZQjol8rtCVc7EdCrQdOSg8MdI</string>
 	<key>GCM_SENDER_ID</key>
-	<string>754086877220</string>
+	<string>887260297856</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.aibadigital.Aiba-Digital-Dev</string>
+	<string>com.aibadigital.Aiba-Digital-Stage</string>
 	<key>PROJECT_ID</key>
-	<string>aiba-digital-dev</string>
+	<string>aiba-digital-stage</string>
 	<key>STORAGE_BUCKET</key>
-	<string>aiba-digital-dev.appspot.com</string>
+	<string>aiba-digital-stage.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:754086877220:ios:4cf43f364994298bfee0b1</string>
+	<string>1:887260297856:ios:36d6fceb40a89c76578465</string>
 </dict>
 </plist>

@@ -15,9 +15,7 @@ file=""
 if [ "${CONFIGURATION}" == "Release Production" ] || [ "${CONFIGURATION}" == "Debug Production" ]; then
     file=${PROJECT_DIR}/.env
 elif [ "${CONFIGURATION}" == "Release Staging" ] || [ "${CONFIGURATION}" == "Debug Staging" ]; then
-    file=${PROJECT_DIR}/.env
-elif [ "${CONFIGURATION}" == "Release Development" ] || [ "${CONFIGURATION}" == "Debug Development" ]; then
-    file=${PROJECT_DIR}/.env.dev
+    file=${PROJECT_DIR}/.env.stage
 else
     echo "Unknown configuration ${CONFIGURATION}"
     exit 1
