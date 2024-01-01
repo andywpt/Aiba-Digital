@@ -32,7 +32,7 @@ jobs:
           ALL_SECRETS: ${{ toJson(secrets) }}
         run: |
           cd iOS
-          touch .env
+          touch .env.stage
           parse() {
             jq -r 'to_entries | sort_by(.key) | .[] | "\(.key)=\(.value)"'
           }
