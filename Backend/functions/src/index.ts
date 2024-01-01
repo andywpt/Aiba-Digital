@@ -1,8 +1,8 @@
 import admin = require("firebase-admin");
 import * as functions from "firebase-functions/v2";
 import * as productionAccount from "../serviceAccount-Prod.json";
-import * as developAccount from "../serviceAccount-Dev.json";
-import config from "./config";
+import * as developAccount from "../serviceAccount-Stage.json";
+import config from "./config/config";
 import {getFirestore} from "firebase-admin/firestore";
 import axios from "axios";
 
@@ -13,7 +13,7 @@ switch (projectId) {
 case "aiba-digital":
   serviceAccount = productionAccount as admin.ServiceAccount;
   break;
-case "aiba-digital-dev":
+case "aiba-digital-stage":
   serviceAccount = developAccount as admin.ServiceAccount;
   break;
 default:
@@ -22,9 +22,21 @@ default:
 
 const credential = admin.credential.cert(serviceAccount);
 admin.initializeApp({credential: credential});
-functions.setGlobalOptions({region: "asia-east1"});
+functions.setGlobalOptions({region: config.firebase.region});
 
 export const githubWebhook = functions.https.onRequest(async (request, response) => {
+  if (request.body.workflow_run.name !== "Submit to TestFlight") {
+    response.sendStatus(200);
+    return;
+  }
+
+  if (request.body.action === "requested") {
+    const msg = "程式碼已更新，開始自動打包並上傳測試版本 ☁️";
+    await sendLineAlert(msg);
+    response.sendStatus(200);
+    return;
+  }
+
   if (request.body.action !== "completed") {
     response.sendStatus(200);
     return;
@@ -32,8 +44,8 @@ export const githubWebhook = functions.https.onRequest(async (request, response)
 
   const appId = config.apple.appId;
   const appLink = `https://beta.itunes.apple.com/v1/app/${appId}`;
-  const successMsg = "最新App測試版本出爐囉，快去更新體驗吧!\n" + appLink;
-  const failureMsg = "App測試版本上傳失敗，請聯繫工程師處理";
+  const successMsg = "測試版本上傳成功，快去更新體驗吧~\n" + appLink;
+  const failureMsg = "測試版本上傳失敗!\n請聯繫工程師處理";
 
   const success = request.body.workflow_run.conclusion === "success";
   const msg = success ? successMsg : failureMsg;
@@ -48,10 +60,10 @@ export const githubWebhook = functions.https.onRequest(async (request, response)
       .set({
         body: request.body,
       });
-    response.sendStatus(200);
-  } catch (e) {
     await sendLineSticker(packageId, stickerId);
     await sendLineAlert(msg);
+    response.sendStatus(200);
+  } catch (e) {
     response.status(400).send((e as Error).message);
   }
 });

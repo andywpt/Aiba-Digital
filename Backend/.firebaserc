@@ -1,7 +1,6 @@
 {
   "projects": {
-    "default": "aiba-digital-dev",
-    "dev": "aiba-digital-dev"
+    "stage": "aiba-digital-stage"
   },
   "targets": {},
   "etags": {}

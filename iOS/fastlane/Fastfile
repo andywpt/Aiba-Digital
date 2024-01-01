@@ -65,7 +65,7 @@ platform :ios do
     gym(
         workspace: "AibaDigital.xcworkspace",
         scheme: "Staging",
-        output_name: "beta.ipa",
+        output_name: "staging.ipa",
         export_method: "app-store",
         export_options: {
             testFlightInternalTestingOnly: true
