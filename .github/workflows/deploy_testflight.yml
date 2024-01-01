@@ -36,8 +36,8 @@ jobs:
           parse() {
             jq -r 'to_entries | sort_by(.key) | .[] | "\(.key)=\(.value)"'
           }
-          echo $ALL_VARIABLES | parse >> .env
-          echo $ALL_SECRETS | parse >> .env
+          echo $ALL_VARIABLES | parse >> .env.stage
+          echo $ALL_SECRETS | parse >> .env.stage
           
       - name: Setup project
         run: |
